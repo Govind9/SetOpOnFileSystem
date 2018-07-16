@@ -1,16 +1,12 @@
 #SetOpOnFileSystem
 
 ###Prerequisite:
-    boost library
-
-###Building:
-
-```g++ -std=c++11 -Os -Wall -pedantic set.cpp -lboost_system -lboost_filesystem -o main```
+	Python 2.7
 
 
 ###Running:
 
-``` ./main <directory1> <op> <directory2> ```
+``` python main.py  <op> <directory1> <directory2> ```
 
 where operations or op would be:
 
