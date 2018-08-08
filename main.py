@@ -73,18 +73,17 @@ def symmetric_difference():
 op = None
 path1 = '.'
 path2 = '.'
-if len(sys.argv) == 2:
+if len(sys.argv) >= 2:
 	op = sys.argv[1]
-if len(sys.argv) == 3:
+if len(sys.argv) >= 3:
 	path1 = sys.argv[2]
-if len(sys.argv) == 4:
+if len(sys.argv) >= 4:
 	path2 = sys.argv[3]
 #path1 = '/home/dnivog/C++/SetOpOnFileSystem/test1'
 #path2 = '/home/dnivog/C++/SetOpOnFileSystem/test2'
 get_all_filepaths(path1, s1) 
 get_all_filepaths(path2, s2)
 all_files = s1.union(s2)
-print all_files
 get_all_dups()
 
 if op == '-u':
